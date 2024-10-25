@@ -1,0 +1,18 @@
+#TODO:Exercise 4: Handling Non-Numeric Strings
+# Define a variable non_numeric_str with the value "hello".
+# Try to convert it to an integer using int() and handle the potential ValueError using a try-except block.
+# Print an error message if the conversion fails.
+
+# Define a variable non_numeric_str with the value "hello".
+non_numeric_str = "hello"
+
+# Try to convert it to an integer using int() and handle the potential ValueError using a try-except block.
+non_numeric_int = int("hello")
+print(non_numeric_int)
+
+# alternate solution
+non_numeric_str = "hello"
+try:
+    result = int(non_numeric_str)
+except ValueError:
+    print("Cannot convert non-numeric string to integer.")  # Expected output
